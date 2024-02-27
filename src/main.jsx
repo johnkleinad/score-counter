@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import AddPlayer from './routes/addPlayer.jsx';
+import AddPlayer from './routes/addPlayers.jsx';
 import ScorePlayers from './routes/scorePlayers.jsx';
 
 const router = createBrowserRouter([
