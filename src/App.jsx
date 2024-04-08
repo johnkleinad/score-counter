@@ -5,6 +5,7 @@ function App() {
 
   return <>
     aqui no hay nada
+    <a href="/addPlayers">add players</a>
   </>
 }
 
