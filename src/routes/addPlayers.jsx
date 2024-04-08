@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PlayerCard from '../components/PlayerCard'
+import { Link } from 'react-router-dom';
 
 export default function AddPlayer() {
     const [player, setPlayer] = useState('')
@@ -37,9 +38,11 @@ export default function AddPlayer() {
                     Agregar Jugador
                 </button>
             </form>
-            <button onClick={startGame} className='bg-green-600 py-4 rounded-xl text-xl font-bold'>
-                Comenzar Juego
-            </button>
+            <Link to={'/scorePlayers'}>
+                <button onClick={startGame} className='bg-green-600 py-4 rounded-xl text-xl font-bold'>
+                    Comenzar Juego
+                </button>
+            </Link>
             <div className='flex gap-4 flex-col'>
                 {players.map((p, i) =>
                     <PlayerCard
